@@ -5,6 +5,7 @@ import Header from '../Header/header'
 import SearchBox from '../SearchBox/searchbox';
 import ResultContainer from '../ResultsContainer/resultscontainer';
 
+// const name = require('@rstacruz/startup-name-generator');
 const name = require('@rstacruz/startup-name-generator');
 
 // functional Component
@@ -34,11 +35,11 @@ class App extends React.Component {
     // };
 
     handleChange = (inputText) => {
-        // console.log(inputText)
+        console.log(inputText)
         this.setState({
             // headerExpanded : inputText.length > 0  ? false : true
             headerExpanded : !inputText,
-            suggestedNames : inputText ? name(inputText) : [],
+            suggestedNames: inputText ? name(inputText) : [],
         })
     }
 
