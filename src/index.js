@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './components/App/App';
 
+
+// component to render, where to render - div (id of div element)
+// write code in jsx and we use create-react-app to transpile into normal js so that browser understands
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -11,7 +13,11 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+// State - piece of data that we might need to save (and that might change later)
+// for rendering in future or for performing some actions in future
+
+// object in js is a key value pair
+
+
+// Props -  a data that we can transfer from a parent component to child component
